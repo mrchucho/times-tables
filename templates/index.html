@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<p id="msg">{{ msg }}</p>
+
+<p class="number"><span id="dl">{{ l }}</span></p>
+<p class="number"><span id="x">x</span><span id="dr">{{ r }}</span></p>
+
+<form id="t" action="/" method="post" autocomplete="off">
+	<input type="hidden" name="l" id="l" value="{{l}}">
+	<input type="hidden" name="r" id="r" value="{{r}}">
+	<input type="text" name="a" id="a" class="number"><br>
+	<input type="submit" id="submit" value="answer">
+</form>
+
+<ul id="stats">
+	<li>You got <span id="correct">{{ stats.correct }}</span> right</li>
+	<li>You got <span id="incorrect">{{ stats.incorrect }}</span> wrong</li>
+	<li>You've answered <span id="answered">{{ stats.answered }}</span></li>
+    <li><a href="/reset">[reset]</a></li>
+</ul>
+<script type="text/javascript">
+    $("#a").focus();
+</script>
+{% endblock %}

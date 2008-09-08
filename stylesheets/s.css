@@ -1,0 +1,56 @@
+body {
+    font-family: Arial;
+            font-family: Helvetica,Arial,sans-serif;
+    font-size: 0.9em;
+}
+	#body {
+		width: 400px;
+		text-align: right;
+	}
+		#body hr {
+			display:none;
+			width: 240px;
+		}
+		.number {
+            font-family: Helvetica,Arial,sans-serif;
+            /*
+            Courier New, Courier New, Courier, monospace;
+            Palatino Linotype, Book Antiqua, Palatino, serif;
+            Times New Roman, Times, serif;
+            */
+			font-size: 4em;
+			text-align: right;
+			margin: 0 0  0;
+			padding: 0 0 0 0;
+		}
+		#x {
+			padding-right: 0.5em;
+		}
+		#a {
+			width: 120px;
+		}
+		#submit {
+			margin-top: 1em;
+		}
+		#stats {
+			list-style-type: none;
+		}
+	#msg {
+		color: red;
+	}
+    #footer {
+        text-align: center;
+        width: 400px;
+        font-size: 0.75em;
+    }
+    #footer span {
+        padding: 1em;
+        color: gray;
+    }
+    #footer a, a:visited, a:active {
+        text-decoration: none;
+        color: gray;
+    }
+    #footer a:hover {
+        text-decoration: underline;
+    }

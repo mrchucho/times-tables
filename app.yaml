@@ -8,5 +8,8 @@ handlers:
   static_dir: javascripts
 - url: /stylesheets
   static_dir: stylesheets
+- url: /robots.txt
+  static_files: static/robots.txt
+  upload: static/robots.txt
 - url: .*
   script: main.py
